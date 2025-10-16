@@ -13,7 +13,7 @@ html {
 
 body {
   position: relative;
-  min-height: 100vh; /* El fondo cubre al menos el viewport */
+  min-height: 500vh; /* El fondo cubre al menos el viewport */
   background-image: url("Register - Login.gif");
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,3 +73,4 @@ body {
   .main-logo { font-size: 64px; }
   .titulo { font-size: 20px; padding: 4px 8px; }
 }
+
