@@ -6,10 +6,15 @@
   box-sizing: border-box;
 }
 
+/* BODY - fondo y contenedor */
+html, body {
+  height: 100%;
+}
 body {
+  position: relative; /* importante para que los absolute funcionen respecto al body */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
   background-image: url("Register - Login.gif");
   background-repeat: no-repeat;
@@ -17,45 +22,56 @@ body {
   background-position: center;
   height: 300vh;
   overflow-x: hidden;
+  font-family: 'Nabla', sans-serif;
 }
 
-/* Título principal */
-h1 {
+/* LOGO PRINCIPAL (no cambiar posición, solo estilo para que no empuje) */
+.main-logo {
   font-family: 'Rubik Glitch', cursive;
   font-size: 100px;
   color: white;
   letter-spacing: 10px;
   font-weight: normal;
   text-align: center;
-  margin-top: 60px;
+  margin: 40px auto 20px auto;
+  text-shadow: 0 0 12px rgba(255,255,255,0.8);
+  z-index: 220; /* logo arriba */
+  position: relative;
 }
 
-/* Subtítulos numerados */
+/* ESTILO GENERAL DE SUBTÍTULOS (títulos de apartado) */
 .titulo {
   font-family: 'VT323', monospace;
-  color: white;
+  color: rgba(255,255,255,0.95);
   font-size: 26px;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  text-shadow: 0 0 8px rgba(255,255,255,0.6);
   position: absolute;
+  z-index: 300; /* asegurar que estén sobre las imágenes */
+  background: rgba(0,0,0,0.12);
+  padding: 6px 10px;
+  border-radius: 6px;
 }
 
-/* Posiciones individuales para que coincidan con tus imágenes */
-.titulo1 { top: -20px; left: 80px; }
-.titulo2 { top: 0px; left: 880px; }
+/* Ubicaciones (ajusta top/left si quieres mover) */
+.titulo1 { top: 10px; left: 80px; }
+.titulo2 { top: 20px; left: 880px; }
 .titulo3 { top: 560px; left: 60px; }
 .titulo4 { top: 560px; left: 1000px; }
 .titulo5 { top: 920px; left: 80px; }
 .titulo6 { top: 920px; left: 940px; }
 .titulo7 { top: 1370px; left: 540px; }
 
-/* Imágenes con posición exacta original */
-.ventana1 { position: absolute; top: 30px; left: 70px; }
-.ventana2 { position: absolute; top: 40px; left: 800px; }
-.ventana3 { position: absolute; top: 600px; left: 30px; }
-.ventana4 { position: absolute; top: 600px; left: 990px; }
-.ventana5 { position: absolute; top: 960px; left: 10px; }
-.ventana6 { position: absolute; top: 950px; left: 860px; }
-.ventana7 { position: absolute; top: 1400px; left: 500px; }
+/* Imágenes - mantener posiciones exactas (como las tenías) */
+.ventana1 { position: absolute; top: 30px; left: 70px; z-index: 100; }
+.ventana2 { position: absolute; top: 40px; left: 800px; z-index: 100; }
+.ventana3 { position: absolute; top: 600px; left: 30px; z-index: 100; }
+.ventana4 { position: absolute; top: 600px; left: 990px; z-index: 100; }
+.ventana5 { position: absolute; top: 960px; left: 10px; z-index: 100; }
+.ventana6 { position: absolute; top: 950px; left: 860px; z-index: 100; }
+.ventana7 { position: absolute; top: 1400px; left: 500px; z-index: 100; }
 
-
-
+/* pequeños ajustes responsivos */
+@media (max-width: 1100px) {
+  .main-logo { font-size: 64px; }
+  .titulo { font-size: 20px; padding: 4px 8px; }
+}
