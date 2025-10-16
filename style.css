@@ -3,82 +3,56 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
-
-
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(Register\ -\ Login.gif);
+  flex-direction: column;
+  background-image: url("Register - Login.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 300vh;
+  overflow-x: hidden;
 }
 
+/* Título principal */
 h1 {
   font-family: 'Rubik Glitch', cursive;
   font-size: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 150vh;
-  right: 200px;
   color: white;
   letter-spacing: 10px;
   font-weight: normal;
-  align-items: center;
+  text-align: center;
+  margin-top: 60px;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  height: 150hv; /* Esto hace que el contenedor ocupe toda la altura de la pantalla */
-  align-items: center;
-  position: center;
+/* Subtítulos numerados */
+.titulo {
+  font-family: 'VT323', monospace;
+  color: white;
+  font-size: 26px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  position: absolute;
 }
 
-.ventana1 {
-  position: absolute;
-  top: 30px;
-  left: 70px;
-}
+/* Posiciones individuales para que coincidan con tus imágenes */
+.titulo1 { top: -20px; left: 80px; }
+.titulo2 { top: 0px; left: 880px; }
+.titulo3 { top: 560px; left: 60px; }
+.titulo4 { top: 560px; left: 1000px; }
+.titulo5 { top: 920px; left: 80px; }
+.titulo6 { top: 920px; left: 940px; }
+.titulo7 { top: 1370px; left: 540px; }
 
-.ventana2 {
-  position: absolute;
- left: 800px; ;
- top : 40px;
-}
-.ventana3 {
-  position: absolute;
- left: 30px; ;
- top : 600px;
-}
-
-.ventana4 {
-  position: absolute;
- left: 990px; ;
- top : 600px;
-}
-
-.ventana5 {
-  position: absolute;
- left: 10px ;
- top : 960px;
-}
-
-.ventana6 {
-  position: absolute;
- left: 860px ;
- top : 950px;
-}
-
-.ventana7 {
-  position: absolute;
- left: 500px ;
- top : 1400px;
-}
+/* Imágenes con posición exacta original */
+.ventana1 { position: absolute; top: 30px; left: 70px; }
+.ventana2 { position: absolute; top: 40px; left: 800px; }
+.ventana3 { position: absolute; top: 600px; left: 30px; }
+.ventana4 { position: absolute; top: 600px; left: 990px; }
+.ventana5 { position: absolute; top: 960px; left: 10px; }
+.ventana6 { position: absolute; top: 950px; left: 860px; }
+.ventana7 { position: absolute; top: 1400px; left: 500px; }
