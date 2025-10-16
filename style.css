@@ -17,7 +17,7 @@ body {
   background-image: url(Register\ -\ Login.gif);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: absolute;
   height: 900vh;
 }
 
@@ -71,5 +71,6 @@ body {
   .main-logo { font-size: 64px; }
   .titulo { font-size: 20px; padding: 4px 8px; }
 }
+
 
 
