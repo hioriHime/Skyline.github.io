@@ -6,22 +6,24 @@
   box-sizing: border-box;
 }
 
-/* BODY - fondo y contenedor */
-html, body {
+/* Fondo que cubre toda la pantalla, incluso si hay scroll */
+html {
   height: 100%;
 }
+
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(Register\ -\ Login.gif);
+  position: relative;
+  min-height: 100vh; /* El fondo cubre al menos el viewport */
+  background-image: url("Register - Login.gif");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: absolute;
-  height: 900vh;
+  background-attachment: fixed; /* El fondo se mantiene fijo al hacer scroll */
+  background-position: center;
+  font-family: 'Nabla', sans-serif;
+  overflow-x: hidden;
 }
 
-/* LOGO PRINCIPAL (no cambiar posición, solo estilo para que no empuje) */
+/* Logo principal */
 .main-logo {
   font-family: 'Rubik Glitch', cursive;
   font-size: 100px;
@@ -31,24 +33,24 @@ body {
   text-align: center;
   margin: 40px auto 20px auto;
   text-shadow: 0 0 12px rgba(255,255,255,0.8);
-  z-index: 220; /* logo arriba */
+  z-index: 220;
   position: relative;
 }
 
-/* ESTILO GENERAL DE SUBTÍTULOS (títulos de apartado) */
+/* Títulos de los apartados */
 .titulo {
   font-family: 'VT323', monospace;
   color: rgba(255,255,255,0.95);
   font-size: 26px;
   text-shadow: 0 0 8px rgba(255,255,255,0.6);
   position: absolute;
-  z-index: 300; /* asegurar que estén sobre las imágenes */
+  z-index: 300;
   background: rgba(0,0,0,0.12);
   padding: 6px 10px;
   border-radius: 6px;
 }
 
-/* Ubicaciones (ajusta top/left si quieres mover) */
+/* Coordenadas exactas de cada título */
 .titulo1 { top: 10px; left: 80px; }
 .titulo2 { top: 20px; left: 880px; }
 .titulo3 { top: 560px; left: 60px; }
@@ -57,7 +59,7 @@ body {
 .titulo6 { top: 920px; left: 940px; }
 .titulo7 { top: 1370px; left: 540px; }
 
-/* Imágenes - mantener posiciones exactas (como las tenías) */
+/* Imágenes y posiciones */
 .ventana1 { position: absolute; top: 30px; left: 70px; z-index: 100; }
 .ventana2 { position: absolute; top: 40px; left: 800px; z-index: 100; }
 .ventana3 { position: absolute; top: 600px; left: 30px; z-index: 100; }
@@ -66,11 +68,8 @@ body {
 .ventana6 { position: absolute; top: 950px; left: 860px; z-index: 100; }
 .ventana7 { position: absolute; top: 1400px; left: 500px; z-index: 100; }
 
-/* pequeños ajustes responsivos */
+/* Responsivo */
 @media (max-width: 1100px) {
   .main-logo { font-size: 64px; }
   .titulo { font-size: 20px; padding: 4px 8px; }
 }
-
-
-
