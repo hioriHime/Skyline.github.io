@@ -6,73 +6,65 @@
   box-sizing: border-box;
 }
 
-/* Fondo que cubre toda la pantalla, incluso si hay scroll */
-html {
-  height: 100%;
-}
-
-body {
- 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(descarga\ \(4\).gif);
-  background-repeat: no-repeat;
+/* 🔹 FONDO FIJO QUE CUBRE TODO */
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background: url("Register - Login.gif") no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
-  height: 100vh;
+  font-family: 'Nabla', sans-serif;
+  overflow-x: hidden;
 }
 
-/* Logo principal */
-.main-logo {
+/* 🔹 TÍTULO PRINCIPAL */
+h1 {
   font-family: 'Rubik Glitch', cursive;
   font-size: 100px;
+  display: flex;
+  justify-content: center;
   color: white;
   letter-spacing: 10px;
   font-weight: normal;
-  text-align: relative;
-  margin: 40px auto 20px auto;
-  text-shadow: 0 0 12px rgba(255,255,255,0.8);
-  z-index: 220;
-  position: relative;
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
 }
 
-/* Títulos de los apartados */
+/* 🔹 TÍTULOS NUMERADOS */
 .titulo {
   font-family: 'VT323', monospace;
-  color: rgba(255,255,255,0.95);
+  color: rgba(255, 255, 255, 0.95);
   font-size: 26px;
-  text-shadow: 0 0 8px rgba(255,255,255,0.6);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
   position: absolute;
-  z-index: 300;
-  background: rgba(0,0,0,0.12);
-  padding: 6px 10px;
-  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 4px 10px;
+  border-radius: 5px;
 }
 
-/* Coordenadas exactas de cada título */
-.titulo1 { top: 10px; left: 80px; }
-.titulo2 { top: 20px; left: 880px; }
-.titulo3 { top: 560px; left: 60px; }
-.titulo4 { top: 560px; left: 1000px; }
-.titulo5 { top: 920px; left: 80px; }
-.titulo6 { top: 920px; left: 940px; }
-.titulo7 { top: 1370px; left: 540px; }
+/* Coordenadas de los títulos */
+.titulo1 { top: 30px; left: 90px; }
+.titulo2 { top: 40px; left: 880px; }
+.titulo3 { top: 610px; left: 60px; }
+.titulo4 { top: 610px; left: 1000px; }
+.titulo5 { top: 980px; left: 40px; }
+.titulo6 { top: 980px; left: 900px; }
+.titulo7 { top: 1440px; left: 520px; }
 
-/* Imágenes y posiciones */
-.ventana1 { position: absolute; top: 30px; left: 70px; z-index: 100; }
-.ventana2 { position: absolute; top: 40px; left: 800px; z-index: 100; }
-.ventana3 { position: absolute; top: 600px; left: 30px; z-index: 100; }
-.ventana4 { position: absolute; top: 600px; left: 990px; z-index: 100; }
-.ventana5 { position: absolute; top: 960px; left: 10px; z-index: 100; }
-.ventana6 { position: absolute; top: 950px; left: 860px; z-index: 100; }
-.ventana7 { position: absolute; top: 1400px; left: 500px; z-index: 100; }
+/* 🔹 IMÁGENES */
+.ventana1 { position: absolute; top: 30px; left: 70px; }
+.ventana2 { position: absolute; top: 40px; left: 800px; }
+.ventana3 { position: absolute; top: 600px; left: 30px; }
+.ventana4 { position: absolute; top: 600px; left: 990px; }
+.ventana5 { position: absolute; top: 960px; left: 10px; }
+.ventana6 { position: absolute; top: 950px; left: 860px; }
+.ventana7 { position: absolute; top: 1400px; left: 500px; }
 
-/* Responsivo */
-@media (max-width: 1100px) {
-  .main-logo { font-size: 64px; }
-  .titulo { font-size: 20px; padding: 4px 8px; }
+/* 🔹 SCROLL SUAVE */
+html {
+  scroll-behavior: smooth;
 }
+
 
 
 
