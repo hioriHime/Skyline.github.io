@@ -1,84 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Rubik+Glitch&family=VT323&display=swap');
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
-
-
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(Register\ -\ Login.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 300vh;
+  background-color: #000013;
+  color: #d6dbff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
 
-h1 {
-  font-family: 'Rubik Glitch', cursive;
-  font-size: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 150vh;
-  right: 200px;
+.item {
+  margin: 30px;
+  display: inline-block;
+  position: relative;
+}
+
+.label {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #b6c0ff;
+  background: rgba(30, 30, 60, 0.4);
+  border-radius: 10px;
+  padding: 6px 12px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(150, 150, 255, 0.3);
+}
+
+.label:hover {
+  background: rgba(150, 150, 255, 0.6);
   color: white;
-  letter-spacing: 10px;
-  font-weight: normal;
-  align-items: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  height: 150hv; /* Esto hace que el contenedor ocupe toda la altura de la pantalla */
-  align-items: center;
-  position: center;
-}
-
-.ventana1 {
-  position: absolute;
-  top: 30px;
-  left: 70px;
-}
-
-.ventana2 {
-  position: absolute;
- left: 800px; ;
- top : 40px;
-}
-.ventana3 {
-  position: absolute;
- left: 30px; ;
- top : 600px;
-}
-
-.ventana4 {
-  position: absolute;
- left: 990px; ;
- top : 600px;
-}
-
-.ventana5 {
-  position: absolute;
- left: 10px ;
- top : 960px;
-}
-
-.ventana6 {
-  position: absolute;
- left: 860px ;
- top : 950px;
-}
-
-.ventana7 {
-  position: absolute;
- left: 500px ;
- top : 1400px;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
 }
