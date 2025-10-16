@@ -40,8 +40,8 @@ h1 {
 }
 
 /* Posiciones individuales para que coincidan con tus imágenes */
-.titulo1 { top: -50px; left: 80px; }
-.titulo2 { top: -50px; left: 880px; }
+.titulo1 { top: 20px; left: 80px; }
+.titulo2 { top: 50px; left: 880px; }
 .titulo3 { top: 560px; left: 60px; }
 .titulo4 { top: 560px; left: 1000px; }
 .titulo5 { top: 920px; left: 80px; }
@@ -56,5 +56,6 @@ h1 {
 .ventana5 { position: absolute; top: 960px; left: 10px; }
 .ventana6 { position: absolute; top: 950px; left: 860px; }
 .ventana7 { position: absolute; top: 1400px; left: 500px; }
+
 
 
