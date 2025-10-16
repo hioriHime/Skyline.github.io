@@ -52,7 +52,7 @@ body {
 
 /* 🔹 IMÁGENES */
 .ventana1 { position: absolute; top: 30px; left: 70px; }
-.ventana2 { position: absolute; top: 40px; left: 800px; }
+.ventana2 { position: absolute; top: 45px; left: 800px; }
 .ventana3 { position: absolute; top: 600px; left: 30px; }
 .ventana4 { position: absolute; top: 600px; left: 990px; }
 .ventana5 { position: absolute; top: 960px; left: 10px; }
@@ -63,6 +63,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
 
 
 
