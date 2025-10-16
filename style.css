@@ -11,18 +11,14 @@ html, body {
   height: 100%;
 }
 body {
-  position: relative; /* importante para que los absolute funcionen respecto al body */
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  background-image: url("Register - Login.gif");
+  justify-content: center;
+  align-items: center;
+  background-image: url(Register\ -\ Login.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 300vh;
-  overflow-x: hidden;
-  font-family: 'Nabla', sans-serif;
 }
 
 /* LOGO PRINCIPAL (no cambiar posición, solo estilo para que no empuje) */
@@ -75,3 +71,4 @@ body {
   .main-logo { font-size: 64px; }
   .titulo { font-size: 20px; padding: 4px 8px; }
 }
+
