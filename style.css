@@ -12,15 +12,15 @@ html {
 }
 
 body {
-  position: relative;
-  min-height: 500vh; /* El fondo cubre al menos el viewport */
-  background-image: url("Register - Login.gif");
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(descarga\ \(4\).gif);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; /* El fondo se mantiene fijo al hacer scroll */
   background-position: center;
-  font-family: 'Nabla', sans-serif;
-  overflow-x: hidden;
+  height: 100vh;
 }
 
 /* Logo principal */
@@ -73,5 +73,6 @@ body {
   .main-logo { font-size: 64px; }
   .titulo { font-size: 20px; padding: 4px 8px; }
 }
+
 
 
